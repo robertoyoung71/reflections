@@ -1,0 +1,36 @@
+Using 'diff' on the command line (CLI):
+
+[$ diff -u old_file.ext new_file.ext]
+
+I needed this a few days ago, it would have saved me an hour of headaches.
+I will remember this and happily use it again.
+! Remember to navigate to the correct directory.
+
+Useful CLI commands learnt so far:
+
+mkdir #make directory
+cd #change directory
+cd ~ #change to home directory
+cd .. #change up a level
+ls #list contents of directory
+ls -a #list contents incl. hidden files
+pwd #print working directory
+touch file.ext #create file.ext in current dir.
+open file.txt #open text file in Text Editor
+subl file.txt #open text file in Sublime (need to create & edit a .bash_profile)
+mv fileURL1 fileURL2 #move selected file from (1) to (2)
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+You can look at the original method used to solve the problem and compare it with the latest, most efficient version.
+In the future you will naturally evolve problem-solving by learning from versions.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Git pros - more likely to be logical, meaningful versions saved as commits
+Git cons - relies on user remembering, not effing up, systems being stable
+
+How can you use the commands git log and git diff to view the history of files?
+git log lists the recent commits for a git repo. remember to scroll up and down with arrow keys if needed. You can use the commit IDs to look at the differences (diff) using git diff
+
+How might using version control make you more confident to make changes that could break something?
+The insurance of having a previously saved working version that we can diff against in the case that we break something makes rolling back changes easy and part of the workflow.
