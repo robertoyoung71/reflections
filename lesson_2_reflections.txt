@@ -1,0 +1,28 @@
+What happens when you initialize a repository? Why do you need to do it?
+Git starts tracking the files in the initialized directory. Git creates and stores a .git file inside.
+
+!! I still need to find out why no commits yet appears instead of initial commit ??
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The working directory operates 'as normal' - once a logical change/meaningful piece of work has been made to a file/project the files are 'added' to the staging area until ready to be committed to the repository. The staging area allows us to double-check/rethink and make sure that we commit what we really want to commit.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+git diff #with no arguments# will compare the working directory with the staging area for differences
+
+git diff --staged #compares staging area to the most recent commit
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+I like the idea of 'context switching' - creating new branches for bugs, offshoots, any work off the main branch. Once revised, these can be merged back in to the main branch(es).
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Difficulties in conflict resolution mean that Git will return comments to a file highlighting areas that decisions need to be made on - once changes have been made the file can then be committed and branches merged.
+
+Careful - checkout the branch you want to merge in to:
+git checkout branch1 #we want to merge changes in to this branch.
+git merge branch2 #this branch's changes will be merge in to our checked out branch.
+
